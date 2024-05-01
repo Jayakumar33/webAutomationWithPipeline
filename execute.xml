@@ -1,0 +1,9 @@
+<suite name="Sanity testing-suite">
+   <test name="Sanity testing-test">
+       <classes>
+           <class name="example.Main"></class>
+           <class name="example.duplicate"></class>
+       </classes>
+   </test>
+</suite>
+
