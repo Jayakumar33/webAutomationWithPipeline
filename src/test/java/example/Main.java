@@ -47,7 +47,7 @@ public class Main {
         ltOptions.put("visual", true);
         ltOptions.put("video", true);
         ltOptions.put("network", true);
-        ltOptions.put("build", "Training");
+        ltOptions.put("build", "Selenium-jenkins build using pipeline");
         ltOptions.put("project", "Test-NG");
         ltOptions.put("w3c", true);
         ltOptions.put("plugin", "java-testNG");
