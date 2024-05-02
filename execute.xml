@@ -1,9 +1,16 @@
 <suite name="Sanity testing-suite">
-   <test name="Sanity testing-test">
-       <classes>
-           <class name="example.Main"></class>
-           <class name="example.duplicate"></class>
-       </classes>
-   </test>
+    <test name="Sanity testing-test" parallel="classes" thread-count="5">
+        <classes>
+            <class name="example.Chrome"></class>
+        </classes>
+
+        <classes>
+            <class name="example.Firefox"></class>
+        </classes>
+
+        <classes>
+            <class name="example.Safari"></class>
+        </classes>
+    </test>
 </suite>
 
