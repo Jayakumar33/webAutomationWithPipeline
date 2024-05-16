@@ -1,0 +1,12 @@
+{"level":"debug","time":"2024-05-16T13:49:22.646+0530","caller":"cmd/bin.go:106","msg":"cli os: windows, cli arch: amd64"}
+{"level":"debug","time":"2024-05-16T13:49:23.616+0530","caller":"cmd/bin.go:115","msg":"Upstream version details: {Name:cli Min:0.2.170 Max:0.2.184} "}
+{"level":"warn","time":"2024-05-16T13:49:25.524+0530","caller":"globalconfigvalidator/setup.go:35","msg":"Found user credentials in env and cli flag both, credentials in env will be ignored"}
+{"level":"warn","time":"2024-05-16T13:49:25.525+0530","caller":"globalconfigvalidator/setup.go:40","msg":"Found key credentials in env and cli flag both, credentials in env will be ignored"}
+{"level":"debug","time":"2024-05-16T13:49:25.528+0530","caller":"core/lifecycle.go:110","msg":"Setting environment"}
+{"level":"debug","time":"2024-05-16T13:49:25.528+0530","caller":"core/lifecycle.go:113","msg":"Parsing config"}
+{"level":"debug","time":"2024-05-16T13:49:25.528+0530","caller":"yamlconfigmanager/setup.go:553","msg":"Custom location for .hyperexecute.yaml specified. Using: yaml/win/testng_hyperexecute_autosplit_sample.yaml"}
+{"level":"error","time":"2024-05-16T13:49:25.529+0530","caller":"core/lifecycle.go:118","msg":"2024-05-16T13:49:22+05:30    error    \u001b[91mERR::NO::HTY\u001b[0m     Unable to find hyperexecute config file.    No file found at location yaml/win/testng_hyperexecute_autosplit_sample.yaml"}
+{"level":"debug","time":"2024-05-16T13:49:25.529+0530","caller":"core/lifecycle.go:55","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2024-05-16T13:49:25.529+0530","caller":"core/lifecycle.go:56","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2024-05-16T13:49:25.530+0530","caller":"core/lifecycle.go:59","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2024-05-16T13:49:25.530+0530","caller":"cmd/bin.go:329","msg":"Exiting application due to error \u001b[91mERR::NO::HTY\u001b[0m     Unable to find hyperexecute config file.    No file found at location yaml/win/testng_hyperexecute_autosplit_sample.yaml"}

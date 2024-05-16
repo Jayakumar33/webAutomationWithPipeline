@@ -1,16 +1,20 @@
-<suite name="Sanity testing-suite">
-    <test name="Sanity testing-test" parallel="classes" thread-count="5">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sanity testing-suite" parallel="tests" thread-count="5">
+    <test name="Sanity testing test chrome">
         <classes>
             <class name="example.Chrome"></class>
         </classes>
+    </test>
 
+    <test name="Sanity testing test firefox">
         <classes>
             <class name="example.Firefox"></class>
         </classes>
+    </test>
 
+    <test name="Sanity testing test edge">
         <classes>
-            <class name="example.Safari"></class>
+            <class name="example.Edge"></class>
         </classes>
     </test>
 </suite>
-

@@ -52,16 +52,18 @@ public class Firefox {
         ltOptions.put("username", username);
         ltOptions.put("resolution", "1366x768");
         ltOptions.put("accessKey", accesskey);
-        ltOptions.put("geoLocation", "AL");
         ltOptions.put("visual", true);
         ltOptions.put("video", true);
         ltOptions.put("network", true);
         ltOptions.put("build", "Tunnel-test");
+        ltOptions.put("performance", true);
+        ltOptions.put("console", true);
+        ltOptions.put("terminal", true);
 //        ltOptions.put("tunnel", true);
         ltOptions.put("project", "Test-NG");
         ltOptions.put("w3c", true);
         ltOptions.put("plugin", "java-testNG");
-        browserOptions.setCapability("LT:Options", ltOptions);
+//        browserOptions.setCapability("LT:Options", ltOptions);
         caps.setCapability("LT:Options", ltOptions);
 
         try {
@@ -87,7 +89,7 @@ public class Firefox {
         driver.get("https://tutorialsninja.com/demo/");
 //        driver.get("http://localhost/dashboard/");
         try {
-            sleep(1000);
+            sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -168,6 +170,7 @@ public class Firefox {
         Assert.assertEquals(logoutMessage, expectedLogoutMessage, "Logout was not successful");
 
         System.out.println("Successfully test executed");
+        status = false;
 
     }
 
